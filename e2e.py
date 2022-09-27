@@ -39,7 +39,8 @@ def main_function(url):
     if test_scores_service(url):
         retun SUCCESS_RETURN_CODE
     else:
-        exit(BAD_RETURN_CODE)
+        print("Score is not in range...")
+        return BAD_RETURN_CODE
 
 
 parser = argparse.ArgumentParser(description='End to end testing',
@@ -48,4 +49,5 @@ parser.add_argument('-u', action='store', dest='flask_url', default=DEFAULT_FLAS
                     help=f"Flask server url e.g. {DEFAULT_FLASK_APP_URL}")
 args = parser.parse_args()
 flask_url = args.flask_url
-main_function(flask_url)
+if main_function(flask_url) < 0:
+    exit(1)
