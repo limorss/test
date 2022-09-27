@@ -35,9 +35,9 @@ def test_scores_service(url):
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
         x = ChromeDriverManager(path=BIN_CHROME_DRIVER_DEST).install()
-        recursive_find(CHROME_DRIVER_BIN, paths, BIN_CHROME_DRIVER_DEST)
-        print(f"Copying {paths[0]} to {BIN_CHROME_DRIVER_DEST}")
-        shutil.copy(paths[0], f"{BIN_CHROME_DRIVER_DEST}{os.sep}{CHROME_DRIVER_BIN}")
+     #   recursive_find(CHROME_DRIVER_BIN, paths, BIN_CHROME_DRIVER_DEST)
+     #   print(f"Copying {paths[0]} to {BIN_CHROME_DRIVER_DEST}")
+     #   shutil.copy(paths[0], f"{BIN_CHROME_DRIVER_DEST}{os.sep}{CHROME_DRIVER_BIN}")
         my_driver = webdriver.Chrome(service=ChromeService(x), chrome_options=chrome_options)
         my_driver.get(url)
         score = my_driver.find_element(by="xpath", value='//*[@id="score"]').text
