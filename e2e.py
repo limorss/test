@@ -37,7 +37,7 @@ def test_scores_service(url):
 
 def main_function(url):
     if test_scores_service(url):
-        retun SUCCESS_RETURN_CODE
+        return SUCCESS_RETURN_CODE
     else:
         print("Score is not in range...")
         return BAD_RETURN_CODE
