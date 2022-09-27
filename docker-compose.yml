@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    privileged: true
+    user: root
+    ports:
+      - "5000:5000"
+    container_name: WOG_Node
+    environment:
+      -COMPOSE_PROJECT_NAME="WorldOfGames" 
+    volumes:
+      - .:/"${COMPOSE_PROJECT_NAME}"

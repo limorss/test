@@ -1,0 +1,28 @@
+{
+  "welcome_msg": "Hello <name> and welcome to the World of Games (WoG).\nHere you can find many cool games to play.",
+  "game_choice_msg": "Please choose a game to play:",
+  "difficulty_choice_msg": "Please choose game difficulty from 1 to ",
+  "games": [
+    {
+      "user_selection": "1",
+      "name": "Memory Game",
+      "instructions": "a sequence of numbers will appear for 1 second and you have to guess it back",
+      "difficulty": 5,
+      "game_source": "MemoryGame"
+    },
+    {
+      "user_selection": "2",
+      "name": "Guess Game",
+      "instructions": "guess a number and see if you chose like the computer",
+      "difficulty": 5,
+      "game_source": "GuessGame"
+    },
+    {
+      "user_selection": "3",
+      "name": "Currency Roulette",
+      "instructions": "try and guess the value of a random amount of USD in ILS",
+      "difficulty": 5,
+      "game_source": "CurrencyRouletteGame"
+    }
+  ]
+}
