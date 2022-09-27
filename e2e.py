@@ -37,9 +37,9 @@ def test_scores_service(url):
 
 def main_function(url):
     if test_scores_service(url):
-        return SUCCESS_RETURN_CODE
+        retun SUCCESS_RETURN_CODE
     else:
-        return BAD_RETURN_CODE
+        exit(BAD_RETURN_CODE)
 
 
 parser = argparse.ArgumentParser(description='End to end testing',
