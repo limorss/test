@@ -14,7 +14,7 @@ from Utils import MAX_SCORE, SUCCESS_RETURN_CODE, BAD_RETURN_CODE
 
 DEFAULT_FLASK_APP_URL = "http://127.0.0.1:5000/"
 BIN_CHROME_DRIVER_DEST = "/usr/local/bin"
-CHROME_DRIVER_BIN = "chromedriver.exe"
+CHROME_DRIVER_BIN = "chromedriver"
 
 def recursive_find(filename, paths, src):
     if os.path.isdir(src):
