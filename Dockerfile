@@ -1,4 +1,4 @@
-FROM python:3.11-rc-alpine3.16
+FROM python:latest
 RUN apt-get -y update
 RUN apt-get install -y libnss3
 WORKDIR /WorldOfGames
